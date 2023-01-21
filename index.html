@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Eyes / No-Eyes</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="index.css">       
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-box">
+                <div class="container-title">
+                    <h2>You have Mixed Type</h2>
+                    <p>Please keep your diet balanced 50/50</p>
+                </div>
+                <div class="container-wrapper">
+                    <div class="digits-container">
+                        <div class="digits-wrapper" id="eyes-digits-wrapper">
+                            <h3>EYES 👁️ 👁️</h3>
+                            <span id="eyes-el" class="digits">0</span>
+                            <p>I ate today</p>
+                            <div class="buttons-wrapper">
+                                <button class="btn-eyes-el" onclick="addEyes()">🐮</button>
+                                <button class="btn-eyes-el" onclick="addEyes()">🐔</button>
+                                <button class="btn-eyes-el" onclick="addEyes()">🐷</button>
+                            </div>
+                        </div>
+                        <div class="digits-wrapper" id="noeyes-digits-wrapper">
+                            <h3>NO-EYES 🙅‍♀️</h3>
+                            <span id="noeyes-el" class="digits">0</span>
+                            <p>I ate today</p>
+                            <div class="buttons-wrapper buttons-wrapper-dark">
+                                <button class="btn-noeyes-el" onclick="addNoEyes()">🍠</button>
+                                <button class="btn-noeyes-el" onclick="addNoEyes()">🥕</button>
+                                <button class="btn-noeyes-el" onclick="addNoEyes()">🥦</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warning-message" style="display: none">
+                        <p id="eyes-warning" style="display: none">Please keep you diet balanced, <br> you've ate more <strong>EYES</strong> than expected.</p>                     
+                        <p id="noeyes-warning" style="display: none">Please keep you diet balanced, <br>you've ate more <strong>NO-EYES</strong> than expected.</p>
+                    </div>
+                </div>
+                <div class="reset-wrapper">
+                    <button id="reset-btn" onclick="reset()">Reset counter</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
