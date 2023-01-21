@@ -25,9 +25,9 @@ body {
 .container-wrapper {
     background: #E5E7EB;
     padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 350px;
     border-radius: 16px;
     border: 4px dashed #111827;
 }
